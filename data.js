@@ -1,0 +1,58 @@
+export const galleryItems = [
+  {
+    title: "Landingpage Gold",
+    copy: "Este moderno y sofisticado diseño de landing contiene 5 secciones y puede ser personalizado totalmente. Es un diseño minimalista y totalmente animado, accesible desde cualquier dispositivo.",
+    servicio: "Landing: Gold",
+    descripcion: "Cinco secciones, responsive, animaciones avanzadas.",
+    precio: "$500",
+  },
+  {
+    title: "Landingpage Silver",
+    copy: "Este diseño minimalista y fino contiene 6 secciones y puede ser personalizado totalmente. Es un diseño sobrio y fino. Accesible desde cualquier dispositivo y animado.",
+    servicio: "Landing: Silver",
+    descripcion: "Seis secciones, responsive, animaciones básicas.",
+    precio: "$200",
+  },
+  {
+    title: "Landingpage Platinum",
+    copy: "Este diseño totalmente sobrio y moderno contiene 10 secciones personalizables. Es un diseño especial para mostrar mucha información, es una página descriptiva y llena de contenido. Accesible desde cualquier dispositivo y animado.",
+    servicio: "Landing: Platinum",
+    descripcion: "Diez secciones, responsive, animaciones básicas.",
+    precio: "$500",
+  },
+  {
+    title: "Portfolio Web",
+    copy: "Un diseño elegante y funcional para mostrar tu trabajo. Ideal para creativos y profesionales que quieren resaltar sus proyectos.",
+    servicio: "Portfolio: Web",
+    descripcion: "Cuatro paginas con distintas secciones, responsive.",
+    precio: "$250",
+  },
+  {
+    title: "Landingpage Premium",
+    copy: "Un diseño totalmente elegante y moderno, ideal para promocionar servicios y beneficios de tu marca.",
+    servicio: "Landingpage: Premium",
+    descripcion: "Cinco secciones, responsive, animaciones avanzadas.",
+    precio: "$500",
+  },
+  {
+    title: "Landing VVS",
+    copy: "Un diseño limpio y acogedor, moderno, ideal para quienes desean una presencia online atractiva.",
+    servicio: "Landing: VVS",
+    descripcion: "Siete secciones, responsive, animaciones avanzadas, formularios que almacenan datos.",
+    precio: "$700",
+  },
+  {
+    title: "Landing Silver",
+    copy: "Este diseño minimalista y fino contiene 8 secciones y puede ser personalizado totalmente. Es un diseño sobrio y fino. Accesible desde cualquier dispositivo y animado.",
+    servicio: "Landing: Platinum",
+    descripcion: "Siete secciones, responsive, animaciones basicas.",
+    precio: "$200",
+  },
+  {
+    title: "Software Vencimiento",
+    copy: "Software diseñado para administrar productos y sus vencimientos, categorias, alertas de proximidad al vencimiento, usuarios y recuperar contraseñas.",
+    servicio: "Stock Manager",
+    descripcion: "Software completo.",
+    precio: "$400 mensuales",
+  },
+];
