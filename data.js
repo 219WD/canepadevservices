@@ -53,6 +53,6 @@ export const galleryItems = [
     copy: "Software diseñado para administrar productos y sus vencimientos, categorias, alertas de proximidad al vencimiento, usuarios y recuperar contraseñas.",
     servicio: "Stock Manager",
     descripcion: "Software completo.",
-    precio: "$400 mensuales",
+    precio: "$200",
   },
 ];
