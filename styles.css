@@ -95,6 +95,7 @@ nav {
   top: 50%;
   transform: translateY(-50%);
 }
+
 hr {
   margin: 1rem 0;
 }
@@ -256,28 +257,38 @@ hr {
   .site-info {
     display: flex;
     flex-direction: column;
-    height: auto; /* Ajusta la altura según el contenido */
-    flex: 0; /* Permite que el tamaño se ajuste según el contenido del nav */
+    height: auto;
+    /* Ajusta la altura según el contenido */
+    flex: 0;
+    /* Permite que el tamaño se ajuste según el contenido del nav */
     border-left: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .site-info .header,
   .site-info .copy {
-    display: none; /* Oculta el contenido adicional */
+    display: none;
+    /* Oculta el contenido adicional */
   }
 
   nav {
-    display: block; /* Asegura que el nav se muestre */
+    display: block;
+    /* Asegura que el nav se muestre */
   }
 
   .info {
     margin-bottom: 1em;
-    width: 80%;
+    width: 90%;
+  }
+
+  .title h1,
+  .title h2 {
+    font-size: 1.5rem;
   }
 
   .project-preview {
-    flex: 1; /* Ocupa el espacio restante */
+    flex: 1;
+    /* Ocupa el espacio restante */
   }
 
   .project-details {
@@ -297,5 +308,11 @@ hr {
     width: 300vw;
     height: 100px;
     flex-direction: row;
+  }
+
+  .caracteristicas,
+  .servicio,
+  .descripcion {
+    display: none;
   }
 }
