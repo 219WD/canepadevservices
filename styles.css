@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -26,10 +27,14 @@ h1 {
   font-family: "Dela Gothic One", sans-serif;
   text-transform: uppercase;
 }
+
 h2 {
   color: #fff;
-  font-size: 2rem;
+  font-size: 35px;
   font-weight: 500;
+  font-family: "Dela Gothic One", sans-serif;
+  text-transform: uppercase;
+  margin-right: 2rem;
 }
 
 a,
@@ -90,6 +95,28 @@ nav {
   top: 50%;
   transform: translateY(-50%);
 }
+hr {
+  margin: 1rem 0;
+}
+
+.copy button {
+  margin-top: 1rem;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-family: "Work Sans", sans-serif;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.copy button:hover {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
 
 .project-preview {
   flex: 2;
@@ -99,15 +126,18 @@ nav {
   position: absolute;
   top: 1em;
   left: 1em;
-  width: 50%;
+  width: 100%;
 }
 
 .title {
   margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
 }
 
 .info {
   margin-bottom: 1em;
+  width: 50%;
 }
 
 .title,
@@ -139,31 +169,41 @@ nav {
   left: 1em;
   bottom: 1em;
   width: 75%;
-  height: 300px; /* Define la altura deseada */
-  overflow-y: scroll; /* Scroll vertical */
-  overflow-x: hidden; /* Evita el scroll horizontal */
-  scrollbar-width: thin; /* Scroll minimalista para Firefox */
-  scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Color del scroll para Firefox */
+  height: 300px;
+  /* Define la altura deseada */
+  overflow-y: scroll;
+  /* Scroll vertical */
+  overflow-x: hidden;
+  /* Evita el scroll horizontal */
+  scrollbar-width: thin;
+  /* Scroll minimalista para Firefox */
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  /* Color del scroll para Firefox */
   will-change: transform;
 }
 
 /* Scrollbar minimalista para Chrome, Edge, Safari */
 .project-img::-webkit-scrollbar {
-  width: 4px; /* Scroll fino */
+  width: 4px;
+  /* Scroll fino */
 }
 
 .project-img::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2); /* Color sutil */
-  border-radius: 10px; /* Bordes redondeados */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Color sutil */
+  border-radius: 10px;
+  /* Bordes redondeados */
 }
 
 .project-img::-webkit-scrollbar-track {
-  background: transparent; /* Fondo transparente */
+  background: transparent;
+  /* Fondo transparente */
 }
 
 .project-img img {
   width: 100%;
-  height: auto; /* Mantén el aspecto de las imágenes */
+  height: auto;
+  /* Mantén el aspecto de las imágenes */
 }
 
 
@@ -214,23 +254,34 @@ nav {
   }
 
   .site-info {
-    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Ajusta la altura según el contenido */
+    flex: 0; /* Permite que el tamaño se ajuste según el contenido del nav */
     border-left: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .header {
-    top: unset;
-    bottom: 1em;
-    transform: none;
+  .site-info .header,
+  .site-info .copy {
+    display: none; /* Oculta el contenido adicional */
   }
 
-  .site-info .copy {
-    display: none;
+  nav {
+    display: block; /* Asegura que el nav se muestre */
+  }
+
+  .info {
+    margin-bottom: 1em;
+    width: 80%;
+  }
+
+  .project-preview {
+    flex: 1; /* Ocupa el espacio restante */
   }
 
   .project-details {
-    width: calc(100% - 1em);
+    width: 100%;
   }
 
   .project-img {

@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const elementsToAnimate = document.querySelectorAll(
-    ".title h1, .info p .line span, .caracteristicas p, .servicio p, .descripcion p, .precio"
+    ".title h1, .precio, .info p .line span, .caracteristicas p, .servicio p, .descripcion p"
   );
   gsap.set(elementsToAnimate, {
     y: 0,
@@ -60,6 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const detailsStructure = [
       { className: "title", tag: "h1", content: activeItem.title },
+      {
+        className: "precio",
+        tag: "h2",
+        content: ` ${activeItem.precio}`,
+      },
       { className: "info", tag: "p", content: activeItem.copy },
       { className: "caracteristicas", tag: "p", content: "Caracteristicas" },
       {
@@ -71,12 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         className: "descripcion",
         tag: "p",
         content: ` ${activeItem.descripcion}`,
-      },
-      {
-        className: "precio",
-        tag: "h2",
-        content: ` ${activeItem.precio}`,
-      },
+      }
     ];
 
     detailsStructure.forEach(({ className, tag, content }) => {
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
     activeItemIndex = index;
 
     const elementsToAnimate = document.querySelectorAll(
-      ".title h1, .info p .line span, .caracteristicas p, .servicio p, .descripcion p, .precio"
+      ".title h1, .precio, .info p .line span, .caracteristicas p, .servicio p, .descripcion p"
     );
 
     const currentProjectImg = document.querySelector(".project-img");
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
         createSplitText(infoP);
 
         const newElementsToAnimate = newProjectDetails.querySelectorAll(
-          ".title h1, .info p .line span, .caracteristicas p, .servicio p, .descripcion p, .precio"
+          ".title h1, .precio, .info p .line span, .caracteristicas p, .servicio p, .descripcion p"
         );
 
         gsap.fromTo(
