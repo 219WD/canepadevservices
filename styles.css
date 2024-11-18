@@ -100,7 +100,8 @@ hr {
   margin: 1rem 0;
 }
 
-.copy button {
+.copy .button {
+  display: flex;
   margin-top: 1rem;
   background: transparent;
   color: #fff;
@@ -114,7 +115,7 @@ hr {
 }
 
 
-.copy button:hover {
+.copy .button:hover {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
 }
