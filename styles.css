@@ -87,7 +87,10 @@ p {
 
 nav {
   display: flex;
-  gap: 1em;
+}
+
+.backto {
+  margin-right: 2rem;
 }
 
 .header {
@@ -248,6 +251,12 @@ hr {
 
 .item.active::after {
   background-color: rgba(0, 0, 0, 0);
+}
+
+.decripCombo ul {
+  color: #fff;
+  margin-left: 2rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 900px) {
